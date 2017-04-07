@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+.clear_fix{
+    clear: both;
+    content: "";
+}
+body{
+	margin:0;
+	padding: 0;
+	background-color: #FFE6E5;
+}
+main{
+    padding-top:100px;
+}
+section{
+	background-image: url(placeholder.svg);
+	background-size: contain;
+	height:750px;
+	width: 750px;
+	background-repeat: no-repeat;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+
+}
+nav{
+	background-color: #FE8683;
+	height:80px;
+	width: 100%;
+	text-align: center;
+	font-size:72px;
+	line-height:100px;
+    font-family: "Savoye LET";
+    position: fixed;
+}
+header{
+    margin-bottom:200px;
+
+}
+.nav_icon{
+    background-image: url(nav_icon.svg);
+    height:50px;
+    width:50px;
+    margin-top: 20px;
+    margin-left:20px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    float: left;
+    position: fixed;
+    z-index: 9999;
+}
+
+.circle_div{
+    height:60px;
+    width:60px;
+    border-radius:60px;
+    background-color: #FEADAB;
+    float: left;
+    margin-right:22px;
+    
+}
+.circle_div:first-child{
+    margin-left:22px;
+ }
+
+.rect_name{
+    height:30px;
+    width:276px;
+    background: #FEADAB;
+    margin-left:22px;
+    margin-top:30px;
+    transform: translateY(15px);
+    position: relative;
+}
+.rect_date{
+    height:30px;
+    width:276px;
+    background: #FEADAB;
+    margin-top:30px;
+    margin-left:22px;
+
+
+}
