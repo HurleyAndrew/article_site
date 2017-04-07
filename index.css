@@ -36,7 +36,7 @@ nav{
     position: fixed;
 }
 header{
-    margin-bottom:200px;
+
 
 }
 .nav_icon{
@@ -73,6 +73,7 @@ header{
     margin-top:30px;
     transform: translateY(15px);
     position: relative;
+    font-size: 25px;
 }
 .rect_date{
     height:30px;
@@ -80,6 +81,47 @@ header{
     background: #FEADAB;
     margin-top:30px;
     margin-left:22px;
+    font-size: 25px;
+    
 
+}
+.article_title{
+    font-family : Playfair Display;
+    font-weight : bold;
+    font-size : 64px;
+    margin:80px 0px 80px 0px;
+    color : #000000;
+    color : rgb(0, 0, 0);
+    text-align: center;
 
+}
+.st0
+{
+    background : #FE8683;
+    background : rgba(254, 134, 131, 1);
+    position : absolute ;
+    left : 78px;
+    top : 4699px;
+    width : 593px;
+    height : 245px;
+}
+.st1
+{
+    background : #FEADAB;
+    background : rgba(254, 173, 171, 1);
+    position : absolute ;
+    left : 145px;
+    top : 4615px;
+    width : 459px;
+    height : 60px;
+}
+.st2
+{
+    background : #FEADAB;
+    background : rgba(254, 173, 171, 1);
+    position : absolute ;
+    left : 145px;
+    top : 4535px;
+    width : 459px;
+    height : 60px;
 }
