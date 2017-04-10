@@ -188,3 +188,30 @@ span{
     left:-30px;
 
 }
+.btn_submit{
+    height:50px;
+    width:150px;
+    background: #49BBF1;
+    margin:auto;
+}
+.submit_cont{
+    margin:auto;
+    width:150px;
+}
+/* css comment section singular comment setup and formatting*/
+
+.commenter_cont{
+
+}
+.commenter_comment{
+
+}
+.commenter_pic{
+
+}
+.commenter_name{
+
+}
+.commenter_date{
+
+}
