@@ -13,12 +13,17 @@ body{
 main{
     padding-top:100px;
 }
+.placeholder{
+    background-image: url(placeholder.svg);
+    background-size: contain;
+    display: block;
+    height:750px;
+    width: 750px;
+    background-repeat: no-repeat;
+}
 section{
-	background-image: url(placeholder.svg);
-	background-size: contain;
-	height:750px;
-	width: 750px;
-	background-repeat: no-repeat;
+    height:750px;
+    width: 750px;
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
@@ -74,6 +79,7 @@ header{
     transform: translateY(15px);
     position: relative;
     font-size: 25px;
+    z-index: -99;
 }
 .rect_date{
     height:30px;
@@ -82,13 +88,11 @@ header{
     margin-top:30px;
     margin-left:22px;
     font-size: 25px;
-    
-
 }
 .article_title{
-    font-family : Playfair Display;
+    font-family : "Playfair Display";
     font-weight : bold;
-    font-size : 64px;
+    font-size : 76px;
     margin:80px 0px 80px 0px;
     color : #000000;
     color : rgb(0, 0, 0);
@@ -124,4 +128,15 @@ header{
     top : 4535px;
     width : 459px;
     height : 60px;
+}
+.para_format{
+    font-size:26px;
+    font-family:"Playfair Display";
+    display: block;
+    margin-right:38px;
+    margin-left:38px;
+
+}
+span{
+    font-size: 50px;
 }
