@@ -4,6 +4,7 @@
 
 	<title>Espy - Javascript and CSS Animations</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, maximum-scale=1.0, user-scalable=no" />
 
 </head>
 <body>
@@ -47,18 +48,40 @@
 		<p class="para_format"> Lets get started with CSS. To get started you will need
 			to have working knowledge of external CSS
 			style sheets. In the style sheet target a
-			div with a class of “demo”. Set its
+			div with a class of &quot;demo&quot;. Set its
 			background-color: black; and a height:100px;
 			and width:100px;. Now you should see your div has
 			become a black box, now add a border-radius:100px;
 			and now you have yourself a circle. Now here comes
-			the important stuff. Below that class add a new element this will be where the animation happens. Type @keyframes demoAnimation{}. Now you have an animation parameter set called “demoAnimations”. Within those curly braces add from{} and to{} on their own lines. Now we can add what we want to happen within those. If you search online you will find tons of things to put in there but for now let’s stick with changing colors and motion.
+			the important stuff. Below that class add a new element this
+			will be where the animation happens. Type @keyframes
+			demoAnimation{}. Now you have an animation parameter
+			set called &quot;demoAnimations&quot;. Within those curly
+			braces add from{} and to{} on their own lines. Now
+			we can add what we want to happen within those. If
+			you search online you will find tons of things to
+			put in there but for now let&#39;s stick with changing
+			colors and motion.
 			Add the following into the code.
 		</p>
+		<div class="code"><code>from{ background-color:black; transform: translateX(50px);}
+			to{background-color:red; transform: translateX(150px);}
+		</code></div>
+		<p class="para_format">And in the class add this
+			code and I will explain.</p>
+		<div class="code">
+		<code>
+			margin-left: 200px;
+			animation-name: demoAnimation;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;</code>
+		</div>
 		<section>
 			<div class="placeholder"></div>
 		</section>
-		<p class="para_format">TML and CSS are two powerful markup languages used in every webpage.
+		<p class="para_format">TML and CSS are two powerful markup
+			languages used in every webpage.
 			As we know HTML is used to create the initial
 			structure, information, and layout of the page.
 			Where things such as headings, bodies, paragraphs
@@ -71,13 +94,19 @@
 			as CSS. JavaScript(JS) offers some features that CSS
 			does not making it more appealing in certain situation.
 		</p>
-		<section class="comment_section">
-
+		<div class="usernames">
 			<input class="st1" type="text" value="First Name">
 			<input class="st2" type="text" value="Last Name">
+		</div>
+		<section class="comment_section">
 			<textarea class="st0" type="text"></textarea>
 		</section>
 
+		<div class="author_cont">
+			<div class="author_desc">
+				<div class="author_pic"></div>
+			</div>
+		</div>
 
 		<footer>
 			

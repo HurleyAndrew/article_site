@@ -32,9 +32,14 @@ section{
 }
 input{
     border:none;
-    font-size: 20px;
+    font-size: 36px;
     font-family: "Myriad Pro";
-
+}
+textarea{
+    border:none;
+    font-size: 36px;
+    font-family: "Myriad Pro";
+    padding:30px;
 }
 nav{
 	background-color: #FE8683;
@@ -49,6 +54,15 @@ nav{
 header{
 
     margin-top:20px;
+}
+code{
+    color: white;
+    box-decoration-break: clone;
+    background:darkgrey;
+
+}
+.code{
+    margin-left:60px;
 }
 .nav_icon{
     background-image: url(assets/nav_icon.svg);
@@ -110,8 +124,8 @@ header{
     background : #FE8683;
     background : rgba(254, 134, 131, 1);
     margin:auto;
-    width : 593px;
-    height : 245px;
+    width : 900px;
+    height : 425px;
 }
 .st1
 {
@@ -120,6 +134,7 @@ header{
     margin:auto;
     width : 459px;
     height : 60px;
+    margin-bottom:40px;
 }
 .st2
 {
@@ -128,6 +143,7 @@ header{
     margin:auto;
     width : 459px;
     height : 60px;
+    margin-bottom:40px;
 }
 .para_format{
     font-size:26px;
@@ -146,5 +162,29 @@ span{
     font-family:"Playfair Display";
 }
 .comment_section{
-    
+    margin:auto;
+    width:900px;
+}
+.usernames{
+    margin:auto;
+    width:459px;
+}
+.author_cont{
+    margin:auto;
+    width:800px;
+    margin-bottom:100px;
+}
+.author_desc{
+    height:150px;
+    width:800px;
+    background-color: #7EcFF5;
+}
+.author_pic{
+    height:150px;
+    width:125px;
+    background-color: #49BBF1;
+    position: relative;
+    top:-50px;
+    left:-30px;
+
 }
