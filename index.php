@@ -16,10 +16,10 @@ $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     $comment = $_POST['comment'];
-    $firstName = $_POST['first_name'];
-    $lastName = $_POST['last_name'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
 
-    $query = $DB->prepare("INSERT INTO commentsection (comment, first_name, last_name) VALUES (:comment :first_name :last_name)");
+    $query = $DB->prepare("INSERT INTO commentsection (comment, first_name, last_name) VALUES (:comment, :first_name, :last_name)");
     $query->bindParam(':comment', $comment);
     $query->bindParam(':first_name', $first_name);
     $query->bindParam(':last_name', $last_name);
@@ -27,7 +27,15 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     $query->execute();
 }
 ?>
+<script type="javascript">
 
+    function refreshComment() {
+        location.reload();
+
+    }
+    document.getElementsByClassName("btn_submit").addEventListener("click", refreshComment());
+
+</script>
 
 <nav>
     <div class="nav_icon">
@@ -106,22 +114,22 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     <p class="para_format">With the CSS we are going “from” our starting black color and a position of 50px to the right
         then going from clack to red. In the class we set a margin so the animation is placed better. Then we look for
         the animation by entering its name, set how long we want it to last, how many times it should loop for, and
-        finally we set the animation to alternate so it looks divke it keeps going and wont jump around. Great! Now you
+        finally we set the animation to alternate so it looks like it keeps going and wont jump around. Great! Now you
         can animate with CSS.
-        CSS isn’t just divmited to those few commands, there are vast divbraries of commands and modifications you can
+        CSS isn’t just limited to those few commands, there are vast libraries of commands and modifications you can
         use
-        to work with. You can resize things, make shaped look 3D, and even modify their animation timedivne. Check out
+        to work with. You can resize things, make shaped look 3D, and even modify their animation timeline. Check out
         some CSS examples around the internet to get a feel for what it has to offer.
     </p>
     <section>
         <div class="placeholder"></div>
     </section>
-    <p class="para_format">Now that we understand the greatness of CSS animation and its capabidivties; why would you
+    <p class="para_format">Now that we understand the greatness of CSS animation and its capabilities; why would you
         ever want to learn a completely new language such as JavaScript to do the same? Well with JavaScript you are
-        able to work more precisely and you can get access to hundreds of divbraries to increase productivity and
-        workflow. JavaScript gives you the abidivty to have variables, loops, methods, objects, and an endless divst of
+        able to work more precisely and you can get access to hundreds of libraries to increase productivity and
+        workflow. JavaScript gives you the ability to have variables, loops, methods, objects, and an endless list of
         other code commands that can effect your web elements. With JS you can make things functional So, for example,
-        you can create events such as when something is cdivcked or scrolled to which triggers animations to start or
+        you can create events such as when something is clicked or scrolled to which triggers animations to start or
         end. One such thing that JS offers that CSS does not is manipulation during the animations. With JavaScript you
         can edit what is going on while an animation is going on which can be very helpful in certain creative
         situations.
@@ -133,13 +141,13 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     </section>
     <p class="para_format">
         Now that we have learned come CSS animations and the differences between JavaScript and CSS which should you
-        continue learning? JS is good for long-winded animations divke logo or title sequences or large and compdivcated
-        element animations that you want complete control over, while CSS is meant for single shot animations divke UI
-        element transitions with a lower count of objects and manipulabidivty. If you are working on smaller, simpler
+        continue learning? JS is good for long-winded animations like logos or title sequences or large and complicated
+        element animations that you want complete control over, while CSS is meant for single shot animations like UI
+        element transitions with a lower count of objects and manipulability. If you are working on smaller, simpler
         sites requiring basic animations such as button or navigation animations, I would suggest sticking with CSS
-        because it offers all the power you could need. But if you are working on something divke animating your logo or
+        because it offers all the power you could need. But if you are working on something like animating your logo or
         the entire site then the organizational and variable aspects of JavaScript will be extremely useful. I suggest
-        learning CSS first because it is easy to learn and widely used, while JavaScript is compdivcated to learn at
+        learning CSS first because it is easy to learn and widely used, while JavaScript is complicated to learn at
         first and will not offer too much for beginners.
     </p>
     <!-- about the author-->
@@ -156,19 +164,11 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
             <input class="st2" type="text" name="last_name" placeholder="Last Name" required="required">
         </div>
         <div class="comment_section">
-            <textarea class="st0" type="text"></textarea>
+            <textarea class="st0" type="text" required="required" name="comment"></textarea>
         </div>
         <div class="submit_cont">
             <button type="submit" class="btn_submit">Submit</button>
-            <script type="text/javascript">
 
-                function refreshComment() {
-                    location.reload();
-
-                }
-                document.getElementsByClassName("btn_submit").addEventListener("click",refreshComment());
-
-            </script>
         </div>
     </form>
 
@@ -188,9 +188,6 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     ?>
 
 
-    <footer>
-
-    </footer>
 </main>
 </body>
 </html>
