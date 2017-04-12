@@ -4,10 +4,31 @@
 
     <title>Espy - Javascript and CSS Animations</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=0.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.0, maximum-scale=1.0, user-scalable=no"/>
 
-        </head>
+</head>
 <body>
+<?php
+
+$DB = new PDO("mysql:host=cias.rit.edu;dbname=amh5267", 'amh5267', 'IPVtwxhBaI');
+$DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+if (isset($_POST['comment']) && !empty($_POST['comment'])) {
+
+    $comment = $_POST['comment'];
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
+
+    $query = $DB->prepare("INSERT INTO commentsection (comment, first_name, last_name) VALUES (:comment :first_name :last_name)");
+    $query->bindParam(':comment', $comment);
+    $query->bindParam(':first_name', $first_name);
+    $query->bindParam(':last_name', $last_name);
+
+    $query->execute();
+}
+?>
+
+
 <nav>
     <div class="nav_icon">
 
@@ -123,13 +144,13 @@
     </p>
     <!-- about the author-->
     <div class="author_cont">
-        <div class="author_desc">
-            <div class="author_pic"></div>
-        </div>
-
+        <div class="author_pic"></div>
+        <div class="auth_first"></div>
+        <div class="auth_last"></div>
+        <div class="author_desc"></div>
     </div>
     <!-- submit a comment-->
-    <form action="comments.php" method="POST">
+    <form action="index.php" method="POST">
         <div class="usernames">
             <input class="st1" type="text" name="first_name" placeholder="First Name" required="required">
             <input class="st2" type="text" name="last_name" placeholder="Last Name" required="required">
@@ -138,7 +159,16 @@
             <textarea class="st0" type="text"></textarea>
         </div>
         <div class="submit_cont">
-            <button type="submit" class="btn_submit">Button</button>
+            <button type="submit" class="btn_submit">Submit</button>
+            <script type="text/javascript">
+
+                function refreshComment() {
+                    location.reload();
+
+                }
+                document.getElementsByClassName("btn_submit").addEventListener("click",refreshComment());
+
+            </script>
         </div>
     </form>
 
@@ -146,17 +176,16 @@
     <?php
     $DB = new PDO("mysql:host=cias.rit.edu;dbname=amh5267", 'amh5267', 'IPVtwxhBaI');
     $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $query = $DB->query('select * from commentSection');
+    $query = $DB->query('select * from commentsection');
 
     while ($row = $query->fetch()) {
         echo "<div class='commenter_cont'>";
-        echo "<div class='commenter_comment'>" . $row['comment'] . "</div> ";
         echo "<div class='commenter_firstname'>" . $row['first_name'] . "</div> ";
         echo "<div class='commenter_lastname'>" . $row['last_name'] . "</div> ";
+        echo "<div class='commenter_comment'>" . $row['comment'] . "</div> ";
         echo " </div>";
     }
     ?>
-
 
 
     <footer>

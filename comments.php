@@ -1,16 +1,9 @@
 <?php
-/*function dd($item){
-    return die(var_dump($item));
-}
-function errorMessage()
-{
-    echo "issue occurred";
-}*/
 
 $DB = new PDO("mysql:host=cias.rit.edu;dbname=amh5267", 'amh5267', 'IPVtwxhBaI');
 $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if(isset($_POST['comment']) && !empty($_POST['comment'])) {
+if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     $comment = $_POST['comment'];
     $firstName = $_POST['first_name'];
     $lastName = $_POST['last_name'];
@@ -22,4 +15,5 @@ if(isset($_POST['comment']) && !empty($_POST['comment'])) {
     $query->execute();
 }
 ?>
+
 

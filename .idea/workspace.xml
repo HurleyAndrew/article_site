@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d14b49-e402-4508-b185-e77927f812d3" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comments.php" afterPath="$PROJECT_DIR$/comments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,27 +25,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="150" column="36" lean-forward="true" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
+            <state relative-caret-position="319">
+              <caret line="167" column="17" lean-forward="true" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
               <folding>
-                <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-                <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-                <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+                <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+                <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+                <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+                <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="222" column="13" lean-forward="true" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+            <state relative-caret-position="898">
+              <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
               <folding>
-                <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+                <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -55,11 +55,10 @@
       <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="45">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
-                <element signature="e#6#119#0#PHP" expanded="true" />
-                <marker date="1491967313000" expanded="true" signature="463:563" ph="INSERT INTO todo... " />
+                <marker date="1491974562000" expanded="true" signature="350:450" ph="INSERT INTO commentSection... " />
               </folding>
             </state>
           </provider>
@@ -90,8 +89,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/comments.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -103,10 +102,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="793" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="833" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -700,15 +698,15 @@
       <workItem from="1491526742044" duration="969000" />
       <workItem from="1491587031096" duration="10733000" />
       <workItem from="1491961836610" duration="1108000" />
-      <workItem from="1491962973347" duration="5685000" />
+      <workItem from="1491962973347" duration="10584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24454000" />
+    <option name="totallyTimeSpent" value="29353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="793" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -722,10 +720,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13107511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12732475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -762,9 +760,10 @@
         <state relative-caret-position="1245">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
@@ -774,7 +773,7 @@
         <state relative-caret-position="1440">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -784,9 +783,10 @@
         <state relative-caret-position="1725">
           <caret line="115" column="27" lean-forward="true" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
           <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
@@ -796,7 +796,7 @@
         <state relative-caret-position="1440">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -806,9 +806,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
@@ -818,7 +819,7 @@
         <state relative-caret-position="1065">
           <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -830,9 +831,10 @@
         <state relative-caret-position="345">
           <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
@@ -842,7 +844,7 @@
         <state relative-caret-position="1065">
           <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -852,9 +854,10 @@
         <state relative-caret-position="345">
           <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
@@ -864,7 +867,7 @@
         <state relative-caret-position="900">
           <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -873,33 +876,33 @@
     <entry file="file://$PROJECT_DIR$/placeholder.svg" />
     <entry file="file://$PROJECT_DIR$/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#6#119#0#PHP" expanded="true" />
-            <marker date="1491967313000" expanded="true" signature="463:563" ph="INSERT INTO todo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="150" column="36" lean-forward="true" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
-          <folding>
-            <marker date="1491968597000" expanded="true" signature="7487:7515" ph="select * fro... commentSection" />
-            <marker date="1491968597000" expanded="true" signature="7598:7614" ph="..." />
-            <marker date="1491968597000" expanded="true" signature="7895:7910" ph="..." />
+            <marker date="1491974562000" expanded="true" signature="350:450" ph="INSERT INTO commentSection... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="222" column="13" lean-forward="true" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+        <state relative-caret-position="898">
+          <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
           <folding>
-            <marker date="1491968737000" expanded="true" signature="85:139" ph="{...}" />
+            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="167" column="17" lean-forward="true" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
+          <folding>
+            <marker date="1491976893000" expanded="true" signature="629:729" ph="INSERT INTO commentsection... " />
+            <marker date="1491976893000" expanded="true" signature="8443:8471" ph="select * fro... commentsection" />
+            <marker date="1491976893000" expanded="true" signature="8554:8556" ph="..." />
+            <marker date="1491976893000" expanded="true" signature="8850:8865" ph="..." />
           </folding>
         </state>
       </provider>
