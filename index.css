@@ -205,17 +205,34 @@ span{
 /* css comment section singular comment setup and formatting*/
 
 .commenter_cont{
-
+    height:400px;
+    width:50%;
+    background-color: white;
+    margin:auto;
 }
-.commenter_comment{
-
+.commenter_comment {
+    height: 150px;
+    width: 350px;
+    background-color: black;
 }
-.commenter_pic{
-
+.commenter_firstname{
+    height:40px;
+    width:100px;
+    background-color: black;
+    position: relative;
+    top:50px;
+    left:120px;
 }
-.commenter_name{
-
+.commenter_lastname{
+    height:40px;
+    width:100px;
+    background-color: black;
+    position: relative;
+    top:50px;
+    left:120px;
 }
 .commenter_date{
-
+    height:40px;
+    width:100px;
+    background-color: black;
 }
