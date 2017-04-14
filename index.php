@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>Espy - Javascript and CSS Animations</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=0.0, maximum-scale=1.0, user-scalable=no"/>
-
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 <?php
@@ -27,13 +25,28 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     $query->execute();
 }
 ?>
-<script type="javascript">
+<script>
 
     function refreshComment() {
         location.reload();
 
     }
-    document.getElementsByClassName("btn_submit").addEventListener("click", refreshComment());
+
+    function unhidenav() {
+        if (document.querySelectorAll(".nav_extend__cont")[0].style.display === 'none') {
+            document.querySelectorAll(".nav_extend__cont")[0].style.display = 'block';
+        }
+        else {
+            document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
+        }
+
+
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll(".btn_submit")[0].addEventListener("click", refreshComment);
+        document.querySelectorAll(".nav_icon")[0].addEventListener("click", unhidenav);
+    });
+
 
 </script>
 
@@ -42,15 +55,31 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     </div>
     Espy
+    <div class="nav_extend__cont">
+        <div class="tab">Art & Life</div>
+        <div class="tab">Politics</div>
+        <div class="tab">Tech</div>
+        <div class="tab">Money</div>
+    </div>
 </nav>
-<main>
+<div class="main">
 
     <header>
-        <div class="circle_div"></div>
-        <div class="circle_div"></div>
-        <div class="circle_div"></div>
-        <div class="circle_div"></div>
-        <div class="circle_div"></div>
+        <div class="circle_div">
+            <div class="facebook"></div>
+        </div>
+        <div class="circle_div">
+            <div class="linkedin"></div>
+        </div>
+        <div class="circle_div">
+            <div class="google"></div>
+        </div>
+        <div class="circle_div">
+            <div class="pinterest"></div>
+        </div>
+        <div class="circle_div">
+            <div class="instagram"></div>
+        </div>
         <div class="rect_name clear_fix">Andrew Hurley</div>
         <div class="rect_date clear_fix">April, 3 2017</div>
     </header>
@@ -136,6 +165,8 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         On a side note JavaScript for web is just a great thing to learn because it opens up lots of opportunities and
         interactive options for your users and even some organization features.
     </p>
+    <p class="quote">It's a core skill for web designers and developers and a feature users have come to expect from
+        modern websites.<br><span class="quote_by">-Val Head</span></p>
     <section>
         <div class="placeholder"></div>
     </section>
@@ -153,9 +184,16 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     <!-- about the author-->
     <div class="author_cont">
         <div class="author_pic"></div>
-        <div class="auth_first"></div>
-        <div class="auth_last"></div>
-        <div class="author_desc"></div>
+        <div class="author_desc">
+            <div class="auth_first">Andrew</div>
+            <div class="auth_last">Hurley</div>
+            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum
+            dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum
+            dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum
+            dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem
+        </div>
+
+
     </div>
     <!-- submit a comment-->
     <form action="index.php" method="POST">
@@ -188,6 +226,6 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     ?>
 
 
-</main>
+</div>
 </body>
 </html>

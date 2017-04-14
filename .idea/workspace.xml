@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d14b49-e402-4508-b185-e77927f812d3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comments.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,43 +29,23 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="222">
+              <caret line="161" column="37" lean-forward="false" selection-start-line="161" selection-start-column="37" selection-end-line="161" selection-end-column="37" />
               <folding>
-                <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-                <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-                <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+                <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+                <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+                <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.css">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="898">
-              <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
-              <folding>
-                <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <marker date="1491974562000" expanded="true" signature="350:450" ph="INSERT INTO commentSection... " />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="272" column="13" lean-forward="true" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,12 +54,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>70px</find>
+      <find>38px</find>
+      <find>44px</find>
+      <find>50px</find>
+      <find>50px</find>
+      <find>40px</find>
+      <find>55px</find>
+      <find>32px</find>
+      <find>150px</find>
+      <find>800px</find>
+      <find>900px</find>
+      <find>425px</find>
+      <find>80px</find>
+      <find>300px</find>
+      <find>30px</find>
+      <find>76px</find>
+      <find>459px</find>
+      <find>60px</find>
+      <find>5px</find>
+      <find>20px</find>
+      <find>cont</find>
+      <find>main</find>
+      <find>spa</find>
+      <find>user</find>
+      <find>article_</find>
       <find>comment</find>
-      <find>todo</find>
-      <find>description</find>
-      <find>li</find>
-      <find>div</find>
-      <find>submit</find>
+      <find>auth</find>
+      <find>article_title</find>
+      <find>displa</find>
+      <find>quote</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +99,10 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/comments.php" />
+        <option value="$PROJECT_DIR$/backup.css" />
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.scss" />
       </list>
     </option>
   </component>
@@ -251,6 +260,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,10 +274,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news_article_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news_article_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -701,19 +724,29 @@
       <workItem from="1491526742044" duration="969000" />
       <workItem from="1491587031096" duration="10733000" />
       <workItem from="1491961836610" duration="1108000" />
-      <workItem from="1491962973347" duration="11881000" />
+      <workItem from="1491962973347" duration="13175000" />
+      <workItem from="1492031121350" duration="32172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30650000" />
+    <option name="totallyTimeSpent" value="64116000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -726,8 +759,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12732475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12875536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -740,7 +774,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,18 +793,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3990">
+          <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
@@ -780,9 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,15 +844,9 @@
         <state relative-caret-position="1725">
           <caret line="115" column="27" lean-forward="true" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
@@ -808,9 +855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -819,15 +864,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
@@ -836,9 +875,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,15 +886,9 @@
         <state relative-caret-position="345">
           <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
@@ -866,9 +897,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -877,15 +906,9 @@
         <state relative-caret-position="345">
           <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
@@ -894,9 +917,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -905,37 +926,70 @@
     <entry file="file://$PROJECT_DIR$/comments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <marker date="1491974562000" expanded="true" signature="350:450" ph="INSERT INTO commentSection... " />
-          </folding>
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
-          <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
-          <folding>
-            <marker date="1491975977000" expanded="true" signature="90:154" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Google.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/placeholder.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="272" column="13" lean-forward="true" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="222">
+          <caret line="161" column="37" lean-forward="false" selection-start-line="161" selection-start-column="37" selection-end-line="161" selection-end-column="37" />
           <folding>
-            <element signature="n#p#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1491978219000" expanded="true" signature="631:733" ph="INSERT INTO commentsection... " />
-            <marker date="1491978219000" expanded="true" signature="8392:8420" ph="select * fro... commentsection" />
-            <marker date="1491978219000" expanded="true" signature="8503:8505" ph="..." />
+            <marker date="1492139344000" expanded="true" signature="590:692" ph="INSERT INTO commentsection... " />
+            <marker date="1492139344000" expanded="true" signature="9922:9950" ph="select * fro... commentsection" />
+            <marker date="1492139344000" expanded="true" signature="10033:10035" ph="..." />
           </folding>
         </state>
       </provider>
