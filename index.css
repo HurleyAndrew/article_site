@@ -395,6 +395,19 @@ span {
   margin-right: auto;
   margin-left: auto; }
 
+.expand_nav {
+  display: none; }
+
+.expand_tab {
+  float: left;
+  height: 50px;
+  width: 15%;
+  text-align: center;
+  font-size: 24px; }
+
+.expand_tab:hover {
+  background-color: #FEADAB; }
+
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
@@ -480,7 +493,18 @@ span {
 
   .para_format {
     margin-right: 70px;
-    margin-left: 70px; } }
+    margin-left: 70px; }
+
+  .nav_icon {
+    display: none; }
+
+  nav {
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .expand_nav {
+    display: block; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   code {
     font-size: 18px; }
@@ -500,32 +524,67 @@ span {
 
   .para_format {
     margin-right: 130px;
-    margin-left: 130px; } }
+    margin-left: 130px; }
+
+  .nav_icon {
+    display: none; }
+
+  nav {
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .expand_nav {
+    display: block; } }
 @media (min-width: 1200px) {
   code {
-    font-size: 20px; }
+    font-size: 22px; }
 
   #Layer_1, #Layer_2, #Layer_3 {
     transform: scale(0.7);
-    margin: auto;
-    margin-top: -130px;
-    margin-bottom: -130px; }
-
-  svg#Layer_2 {
-    margin-top: -200px !important;
-    margin-bottom: -200px !important; }
+    margin: auto; }
 
   svg#Layer_4, svg#Layer_3 {
     transform: scale(0.7); }
-    svg#Layer_4 svg#Layer_3, svg#Layer_3 svg#Layer_3 {
-      padding-top: 100px;
-      padding-bottom: 100px; }
-    svg#Layer_4 svg#Layer_4, svg#Layer_3 svg#Layer_4 {
-      padding-top: -300px;
-      padding-bottom: -300px; }
+
+  svg#Layer_3 {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+
+  svg#Layer_4 {
+    padding-top: -300px;
+    padding-bottom: -300px; }
 
   .para_format {
-    margin-right: 250px;
-    margin-left: 250px; } }
+    margin-right: 25%;
+    margin-left: 25%; }
+
+  .animation_three {
+    margin: auto; }
+
+  svg {
+    margin-left: 40% !important;
+    margin-right: 40% !important; }
+
+  .commenter_cont {
+    width: 30%; }
+
+  .usernames {
+    width: 60%; }
+
+  form {
+    width: 50%;
+    margin: auto; }
+
+  .nav_icon {
+    display: none; }
+
+  nav {
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .expand_nav {
+    display: block; } }
 
 /*# sourceMappingURL=index.css.map */
