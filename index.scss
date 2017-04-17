@@ -1,3 +1,4 @@
+$font-stack: "Playfair Display", "Trebuchet MS", Helvetica, serif;
 * {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -140,7 +141,7 @@ nav {
 
 .tab {
   font-size: 20px;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   color: black;
   background: #C2E1DE;
   border-bottom: solid #A4D3CE 2px;
@@ -210,7 +211,7 @@ code {
 }
 
 .article_title {
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   font-weight: bold;
   font-size: 50px;
   margin: 20px 0px 40px 0px;
@@ -248,7 +249,7 @@ code {
 
 .para_format {
   font-size: 26px;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   display: block;
   margin-right: 38px;
   margin-left: 38px;
@@ -261,7 +262,7 @@ span {
   padding-right: 26px;
   margin-bottom: 0px;
   float: left;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
 }
 
 .first_letter {
@@ -269,7 +270,7 @@ span {
 }
 
 .quote {
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   color: #6F76DC;
   font-style: italic;
   font-weight: bold;
@@ -290,7 +291,7 @@ span {
 }
 
 .quote_by {
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   font-weight: bold;
   font-size: 26px;
   margin: auto;
@@ -402,7 +403,7 @@ span {
   background: #49BBF1;
   bottom: 0;
   font-size: 22px;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
   padding: 5px 20px 5px 20px;
 }
 
@@ -415,7 +416,7 @@ span {
   float: left;
   line-height: 1.5;
   font-size: 20px;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
 
 }
 
@@ -428,7 +429,7 @@ span {
   float: right;
   line-height: 1.5;
   font-size: 20px;
-  font-family: "Playfair Display";
+  font-family: $font-stack;
 }
 
 .animation_three {
@@ -439,6 +440,7 @@ span {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  margin: auto;
 }
 
 @keyframes demoAnimation {
@@ -472,78 +474,162 @@ span {
 /* No media query since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 380px) {
-  .article_title{
+@media (max-width: 576px) {
+  .article_title {
     font-size: 28px;
   }
   div.next_article {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 350px;
   }
+
   div.author_cont {
     display: none;
 
   }
-  div.animation_one{
-    width:auto;
+  div.animation_one {
+    width: auto;
   }
   #Layer_1 {
-    transform:scale(.70);
+    transform: scale(.70);
     transform-origin: 50%;
-    margin:auto;
+    margin: auto;
   }
-  .para_format{
-    font-size:18px;
-    margin-right:18px;
-    margin-left:18px;
+  .para_format {
+    font-size: 18px;
+    margin-right: 18px;
+    margin-left: 18px;
   }
- span.first_letter{
-   font-size:80px;
-   padding-right:5px;
-   margin-bottom:-15px;
- }
-.circle_div{
-  margin-right:5px;
-  transform:scale(.75);
-}
-  div.rect_date{
-    height:20px;
-    width:75px;
-    font-size:12px;
-    line-height:1.5;
+  span.first_letter {
+    font-size: 80px;
+    padding-right: 5px;
+    margin-bottom: -15px;
   }
-  div.rect_name{
-    height:20px;
-    width:85px;
-    font-size:12px;
-    line-height:1.5;
+  .circle_div {
+    margin-right: 5px;
+    transform: scale(.75);
+  }
+  div.rect_date {
+    height: 20px;
+    width: 75px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  div.rect_name {
+    height: 20px;
+    width: 85px;
+    font-size: 12px;
+    line-height: 1.5;
   }
   code {
     font-size: 12px;
   }
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  div.next_article {
-    height: 600px;
-    width: 600px;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  code {
+    font-size: 14px;
   }
+  #Layer_1, #Layer_2, #Layer_3 {
+    transform: scale(0.7);
+    margin: auto;
+    margin-top: -130px;
+    margin-bottom: -130px;
 
+  }
+  svg#Layer_2 {
+    margin-top: -200px !important;
+    margin-bottom: -200px !important;
+  }
+  svg#Layer_4, svg#Layer_3{
+    transform: scale(0.7);
+
+  }
 }
 
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  div.next_article {
-    height: 600px;
-    width: 600px;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  code {
+    font-size: 16px;
+  }
+  #Layer_1, #Layer_2, #Layer_3 {
+    transform: scale(0.7);
+    margin: auto;
+    margin-top: -130px;
+    margin-bottom: -130px;
+
+  }
+  svg#Layer_2 {
+    margin-top: -200px !important;
+    margin-bottom: -200px !important;
+  }
+  svg#Layer_4, svg#Layer_3{
+    transform: scale(0.7);
+
+  }
+  .para_format {
+    margin-right: 70px;
+    margin-left: 70px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+  code {
+    font-size: 18px;
+  }
+  #Layer_1, #Layer_2, #Layer_3 {
+    transform: scale(0.7);
+    margin: auto;
+    margin-top: -130px;
+    margin-bottom: -130px;
+
+  }
+  svg#Layer_2 {
+    margin-top: -200px !important;
+    margin-bottom: -200px !important;
+  }
+  svg#Layer_4, svg#Layer_3{
+    transform: scale(0.7);
+
+  }
+  .para_format {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  div.next_article {
-    height: 600px;
-    width: 600px;
+  code {
+    font-size: 20px;
+  }
+  #Layer_1, #Layer_2, #Layer_3 {
+    transform: scale(0.7);
+    margin: auto;
+    margin-top: -130px;
+    margin-bottom: -130px;
+
+  }
+  svg#Layer_2 {
+    margin-top: -200px !important;
+    margin-bottom: -200px !important;
+
+  }
+  svg#Layer_4, svg#Layer_3{
+    transform: scale(0.7);
+    svg#Layer_3{
+      padding-top:100px;
+      padding-bottom:100px;
+    }
+    svg#Layer_4{
+      padding-top:-300px;
+      padding-bottom:-300px;
+    }
+  }
+  .para_format {
+    margin-right: 250px;
+    margin-left: 250px;
   }
 }

@@ -25,6 +25,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     header('Location: ' . $_SERVER['PHP_SELF'] . '?success');
 
+
     $query->execute();
 
     exit;
@@ -41,9 +42,11 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     function unhidenav() {
         if (document.querySelectorAll(".nav_extend__cont")[0].style.display === 'none') {
             document.querySelectorAll(".nav_extend__cont")[0].style.display = 'block';
+            /*console.log("now showing")*/
         }
         else {
             document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
+            /*console.log("now hiding")*/
         }
 
 
@@ -51,6 +54,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll(".btn_submit")[0].addEventListener("click", refreshComment);
         document.querySelectorAll(".nav_icon")[0].addEventListener("click", unhidenav);
+        document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
     });
 
 
@@ -72,27 +76,27 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     <header>
         <div class="circle_div">
-            <a href="www.facebook.com" target="_blank">
+            <a href="http://www.facebook.com" target="_blank">
                 <div class="facebook"></div>
             </a>
         </div>
         <div class="circle_div">
-            <a href="www.linkedin.com" target="_blank">
+            <a href="http://www.linkedin.com" target="_blank">
                 <div class="linkedin"></div>
             </a>
         </div>
         <div class="circle_div">
-            <a href="www.google.com" target="_blank">
+            <a href="http://www.google.com" target="_blank">
                 <div class="google"></div>
             </a>
         </div>
         <div class="circle_div">
-            <a href="www.pinterest.com" target="_blank">
+            <a href="http://www.pinterest.com" target="_blank">
                 <div class="pinterest"></div>
             </a>
         </div>
         <div class="circle_div">
-            <a href="www.instagram.com" target="_blank">
+            <a href="http://www.instagram.com" target="_blank">
                 <div class="instagram"></div>
             </a>
         </div>
@@ -102,9 +106,9 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     <div class="article_title">Making The Web Better<br>With<br>CSS and Javascript</div>
 
 
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
             <style type="text/css">
 
                 .gt0 {
@@ -112,21 +116,21 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
                     stroke: #000000;
                     stroke-width: 8;
                     stroke-miterlimit: 10;
-                    animation: spin_main infinite 3s alternate-reverse ease-in-out;
+                    animation: spin_main infinite 3s ease-in-out;
                     transform-origin: center;
 
                 }
 
                 .gt1 {
                     fill: #E097FF;
-                    animation: scale_main infinite 3s alternate-reverse ease-in-out;
+                    animation: scale_main infinite 3s ease-in-out;
                     transform-origin: center;
 
                 }
 
                 .gt2 {
                     fill: #A4C7FF;
-                    animation: scale_main infinite 3s alternate-reverse ease-in-out;
+                    animation: scale_main infinite 3s ease-in-out;
                     transform-origin: center;
 
                 }
@@ -141,27 +145,29 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
                 }
 
                 @keyframes scale_main {
-                    from {
+                    0% {
                         transform: scale(0);
                     }
-                    to {
+                    50% {
                         transform: scale(2);
+                    }
+                    100% {
+                        transform: scale(0);
                     }
                 }
             </style>
-                <path class="gt0" d="M480.2,250c0-127.1-103-230.2-230.2-230.2"></path>
-                <path class="gt0" d="M19.8,250c0,127.1,103,230.2,230.2,230.2"></path>
+        <path class="gt0" d="M480.2,250c0-127.1-103-230.2-230.2-230.2"></path>
+        <path class="gt0" d="M19.8,250c0,127.1,103,230.2,230.2,230.2"></path>
 
-                <path class="gt0" d="M250,451.5c111.3,0,201.5-90.2,201.5-201.5"></path>
-                <path class="gt0" d="M250,48.5C138.7,48.5,48.5,138.7,48.5,250"></path>
+        <path class="gt0" d="M250,451.5c111.3,0,201.5-90.2,201.5-201.5"></path>
+        <path class="gt0" d="M250,48.5C138.7,48.5,48.5,138.7,48.5,250"></path>
 
-                <path class="gt0" d="M412.7,250c0-89.9-72.9-162.7-162.7-162.7"></path>
-                <path class="gt0" d="M87.3,250c0,89.9,72.9,162.7,162.7,162.7"></path>
+        <path class="gt0" d="M412.7,250c0-89.9-72.9-162.7-162.7-162.7"></path>
+        <path class="gt0" d="M87.3,250c0,89.9,72.9,162.7,162.7,162.7"></path>
 
-                <circle class="gt1" cx="250" cy="250" r="65.6"></circle>
-                <circle class="gt2" cx="250" cy="250" r="29.7"></circle>
+        <circle class="gt1" cx="250" cy="250" r="65.6"></circle>
+        <circle class="gt2" cx="250" cy="250" r="29.7"></circle>
             </svg>
-
 
 
     <p class="para_format"><span class="first_letter">H</span>TML and CSS are two powerful markup languages used in
@@ -179,10 +185,10 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         does, not making it more appealing in certain situation.
     </p>
 
-        <div class="animation_one">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+    <div class="animation_one">
+        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                 <style type="text/css">
                     .st0 {
                         fill: #FDFFB3;
@@ -210,34 +216,34 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
                     }
 
                 </style>
-                <circle class="st0" cx="250" cy="250" r="22"></circle>
-                <circle class="st1" cx="250.2" cy="159.2" r="22"></circle>
-                <circle class="st1" cx="249.6" cy="340.8" r="22"></circle>
-                <circle class="st1" cx="159.2" cy="249.7" r="22"></circle>
-                <circle class="st1" cx="340.7" cy="250.3" r="22"></circle>
-                <circle class="st2" cx="250.2" cy="103.2" r="15.6"></circle>
-                <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -37.7471 104.7904)" class="st2" cx="176.7" cy="122.8"
-                         rx="15.6" ry="15.6"></ellipse>
-                <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -91.5567 194.5829)" class="st2" cx="122.7" cy="176.6"
-                         rx="15.6" ry="15.6"></ellipse>
-                <circle class="st2" cx="102.9" cy="250.1" r="15.6"></circle>
-                <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -145.4294 104.6074)" class="st2" cx="122.5" cy="323.7"
-                         rx="15.6" ry="15.6"></ellipse>
-                <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -238.9035 341.4297)" class="st2" cx="176.2" cy="377.6"
-                         rx="15.6" ry="15.6"></ellipse>
-                <circle class="st2" cx="249.8" cy="397.4" r="15.6"></circle>
-                <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -145.6124 212.2898)" class="st2" cx="323.3" cy="377.9"
-                         rx="15.6" ry="15.6"></ellipse>
-                <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -92.0567 488.7766)" class="st2" cx="377.3" cy="324.1"
-                         rx="15.6" ry="15.6"></ellipse>
-                <circle class="st2" cx="397.1" cy="250.6" r="15.6"></circle>
-                <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -37.9301 212.4728)" class="st2" cx="377.5" cy="177"
-                         rx="15.6" ry="15.6"></ellipse>
-                <ellipse transform="matrix(0.5 -0.866 0.866 0.5 55.2901 341.9297)" class="st2" cx="323.8" cy="123.1"
-                         rx="15.6" ry="15.6"></ellipse>
+            <circle class="st0" cx="250" cy="250" r="22"></circle>
+            <circle class="st1" cx="250.2" cy="159.2" r="22"></circle>
+            <circle class="st1" cx="249.6" cy="340.8" r="22"></circle>
+            <circle class="st1" cx="159.2" cy="249.7" r="22"></circle>
+            <circle class="st1" cx="340.7" cy="250.3" r="22"></circle>
+            <circle class="st2" cx="250.2" cy="103.2" r="15.6"></circle>
+            <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -37.7471 104.7904)" class="st2" cx="176.7" cy="122.8"
+                     rx="15.6" ry="15.6"></ellipse>
+            <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -91.5567 194.5829)" class="st2" cx="122.7" cy="176.6"
+                     rx="15.6" ry="15.6"></ellipse>
+            <circle class="st2" cx="102.9" cy="250.1" r="15.6"></circle>
+            <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -145.4294 104.6074)" class="st2" cx="122.5" cy="323.7"
+                     rx="15.6" ry="15.6"></ellipse>
+            <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -238.9035 341.4297)" class="st2" cx="176.2" cy="377.6"
+                     rx="15.6" ry="15.6"></ellipse>
+            <circle class="st2" cx="249.8" cy="397.4" r="15.6"></circle>
+            <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -145.6124 212.2898)" class="st2" cx="323.3" cy="377.9"
+                     rx="15.6" ry="15.6"></ellipse>
+            <ellipse transform="matrix(0.5 -0.866 0.866 0.5 -92.0567 488.7766)" class="st2" cx="377.3" cy="324.1"
+                     rx="15.6" ry="15.6"></ellipse>
+            <circle class="st2" cx="397.1" cy="250.6" r="15.6"></circle>
+            <ellipse transform="matrix(0.866 -0.5 0.5 0.866 -37.9301 212.4728)" class="st2" cx="377.5" cy="177"
+                     rx="15.6" ry="15.6"></ellipse>
+            <ellipse transform="matrix(0.5 -0.866 0.866 0.5 55.2901 341.9297)" class="st2" cx="323.8" cy="123.1"
+                     rx="15.6" ry="15.6"></ellipse>
             </svg>
 
-        </div>
+    </div>
 
     <p class="para_format"> Lets get started with CSS. To get started you will need
         to have working knowledge of external CSS
@@ -272,10 +278,9 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
             animation-direction: alternate;</code>
     </div>
 
-        <div class="animation_three">
+    <div class="animation_three">
 
-        </div>
-
+    </div>
 
 
     <p class="para_format">With the CSS we are going “from” our starting black color and a position of 50px to the right
@@ -289,10 +294,10 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         some CSS examples around the internet to get a feel for what it has to offer.
     </p>
 
-        <div class="animation_four">
-            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+    <div class="animation_four">
+        <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                             <style type="text/css">
                                 .zt0 {
                                     fill: #AFFF7B;
@@ -364,44 +369,44 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
                             </style>
 
-                <g class="group_one">
-                    <rect x="49.8" y="22.2" class="zt0" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_two">
-                    <rect x="49.8" y="119.2" class="zt0" width="67.5" height="67.5"/>
-                    <rect x="160.8" y="22.2" class="zt1" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_three">
-                    <rect x="49.8" y="216.2" class="zt0" width="67.5" height="67.5"/>
-                    <rect x="160.8" y="119.2" class="zt1" width="67.5" height="67.5"/>
-                    <rect x="271.8" y="22.2" class="zt2" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_four">
-                    <rect x="49.8" y="313.2" class="zt0" width="67.5" height="67.5"/>
-                    <rect x="160.8" y="216.2" class="zt1" width="67.5" height="67.5"/>
-                    <rect x="271.8" y="119.2" class="zt2" width="67.5" height="67.5"/>
-                    <rect x="382.8" y="22.2" class="zt3" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_five">
-                    <rect x="49.8" y="410.2" class="zt0" width="67.5" height="67.5"/>
-                    <rect x="160.8" y="313.2" class="zt1" width="67.5" height="67.5"/>
-                    <rect x="271.8" y="216.2" class="zt2" width="67.5" height="67.5"/>
-                    <rect x="382.8" y="119.2" class="zt3" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_six">
-                    <rect x="160.8" y="410.2" class="zt1" width="67.5" height="67.5"/>
-                    <rect x="271.8" y="313.2" class="zt2" width="67.5" height="67.5"/>
-                    <rect x="382.8" y="216.2" class="zt3" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_seven">
-                    <rect x="271.8" y="410.2" class="zt2" width="67.5" height="67.5"/>
-                    <rect x="382.8" y="313.2" class="zt3" width="67.5" height="67.5"/>
-                </g>
-                <g class="group_eight">
-                    <rect x="382.8" y="410.2" class="zt3" width="67.5" height="67.5"/>
-                </g>
+            <g class="group_one">
+                <rect x="49.8" y="22.2" class="zt0" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_two">
+                <rect x="49.8" y="119.2" class="zt0" width="67.5" height="67.5"/>
+                <rect x="160.8" y="22.2" class="zt1" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_three">
+                <rect x="49.8" y="216.2" class="zt0" width="67.5" height="67.5"/>
+                <rect x="160.8" y="119.2" class="zt1" width="67.5" height="67.5"/>
+                <rect x="271.8" y="22.2" class="zt2" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_four">
+                <rect x="49.8" y="313.2" class="zt0" width="67.5" height="67.5"/>
+                <rect x="160.8" y="216.2" class="zt1" width="67.5" height="67.5"/>
+                <rect x="271.8" y="119.2" class="zt2" width="67.5" height="67.5"/>
+                <rect x="382.8" y="22.2" class="zt3" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_five">
+                <rect x="49.8" y="410.2" class="zt0" width="67.5" height="67.5"/>
+                <rect x="160.8" y="313.2" class="zt1" width="67.5" height="67.5"/>
+                <rect x="271.8" y="216.2" class="zt2" width="67.5" height="67.5"/>
+                <rect x="382.8" y="119.2" class="zt3" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_six">
+                <rect x="160.8" y="410.2" class="zt1" width="67.5" height="67.5"/>
+                <rect x="271.8" y="313.2" class="zt2" width="67.5" height="67.5"/>
+                <rect x="382.8" y="216.2" class="zt3" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_seven">
+                <rect x="271.8" y="410.2" class="zt2" width="67.5" height="67.5"/>
+                <rect x="382.8" y="313.2" class="zt3" width="67.5" height="67.5"/>
+            </g>
+            <g class="group_eight">
+                <rect x="382.8" y="410.2" class="zt3" width="67.5" height="67.5"/>
+            </g>
             </svg>
-        </div>
+    </div>
 
     <p class="para_format">Now that we understand the greatness of CSS animation and its capabilities; why would you
         ever want to learn a completely new language such as JavaScript to do the same? Well with JavaScript you are
@@ -421,10 +426,10 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         modern websites.</p>
     <p class="quote"><span class="quotes">&rdquo;</span></p><br><span class="quote_by">-Val Head</span>
 
-        <div class="animation_five">
-            <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+    <div class="animation_five">
+        <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                             <style type="text/css">
                                 .yt0 {
 
@@ -445,17 +450,17 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
                                     }
                                 }
                             </style>
-                <polygon class="yt1" points="312.4,142 187.6,142 125.3,250 187.6,358 312.4,358 374.7,250 "></polygon>
-                <g>
-                    <polygon class="yt0" points="250,16 187.6,142 312.4,142 	"></polygon>
-                    <polygon class="yt0" points="250,484 312.4,358 187.6,358 	"></polygon>
-                    <polygon class="yt0" points="452,131.9 311.8,141.7 374.7,249.3 	"></polygon>
-                    <polygon class="yt0" points="48,368.1 188.2,358.3 125.3,250.7 	"></polygon>
-                    <polygon class="yt0" points="47.6,132.6 125.3,249.8 187.9,141.9 	"></polygon>
-                    <polygon class="yt0" points="452.4,367.4 374.7,250.2 312.1,358.1 	"></polygon>
-                </g>
+            <polygon class="yt1" points="312.4,142 187.6,142 125.3,250 187.6,358 312.4,358 374.7,250 "></polygon>
+            <g>
+                <polygon class="yt0" points="250,16 187.6,142 312.4,142 	"></polygon>
+                <polygon class="yt0" points="250,484 312.4,358 187.6,358 	"></polygon>
+                <polygon class="yt0" points="452,131.9 311.8,141.7 374.7,249.3 	"></polygon>
+                <polygon class="yt0" points="48,368.1 188.2,358.3 125.3,250.7 	"></polygon>
+                <polygon class="yt0" points="47.6,132.6 125.3,249.8 187.9,141.9 	"></polygon>
+                <polygon class="yt0" points="452.4,367.4 374.7,250.2 312.1,358.1 	"></polygon>
+            </g>
             </svg>
-        </div>
+    </div>
 
     <p class="para_format">
         Now that we have learned some CSS animations and the differences between JavaScript and CSS which should you
