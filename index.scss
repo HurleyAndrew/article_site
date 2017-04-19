@@ -2,6 +2,7 @@ $font-stack: "Playfair Display", "Trebuchet MS", Helvetica, serif;
 * {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
+  shape-rendering: geometricPrecision;
 }
 
 .clear_fix {
@@ -66,16 +67,6 @@ main {
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
-}
-
-section {
-
-  width: 400px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
-
 }
 
 button {
@@ -171,6 +162,7 @@ code {
   margin: auto;
   width: 50%;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .circle_div {
@@ -180,6 +172,26 @@ code {
   background-color: #FEADAB;
   float: left;
   margin-right: 28px;
+  display: none;
+  animation: social_swipein .4s ease-out;
+}
+
+@for $i from 1 through 5 {
+  .circle_div:nth-child(#{$i}) {
+    animation-delay: $i * .2s;
+    display: block;
+  }
+}
+
+@keyframes social_swipein {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 
 }
 
@@ -248,7 +260,7 @@ code {
 }
 
 .para_format {
-  font-size: 26px;
+  font-size: 18px;
   font-family: $font-stack;
   display: block;
   margin-right: 38px;
@@ -455,44 +467,63 @@ span {
 }
 
 .next_article {
-  height: 300px;
-  width: 300px;
-  background: #000;
-  margin-bottom: 50px;
+  height: 350px;
 
 }
 
 .next_article__cont {
-  width: 300px;
+  width: 60%;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
 
 }
+
 .expand_nav {
   display: none;
 }
-.expand_tab{
+
+.expand_tab {
   float: left;
-  height:50px;
-  width:15%;
+  height: 50px;
+  width: 15%;
   text-align: center;
-  font-size:24px;
+  font-size: 24px;
 }
-.expand_tab:hover{
+
+.expand_tab:hover {
   background-color: #FEADAB;
 }
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query since this is the default in Bootstrap*/
 
-/*Small devices (landscape phones, 576px and up)*/
+.desktop_preview {
+  background-image: url("assets/desktop_preview.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.desktop_preview_second {
+  background-image: url("assets/desktop_preview_second.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow_left {
+  display: none;
+}
+
+.arrow_right {
+  display: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+
+Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
   .article_title {
     font-size: 28px;
   }
-  div.next_article {
-    height: 250px;
-    width: 350px;
+  .animation_three {
+    margin-left: 0px;
   }
 
   div.author_cont {
@@ -534,30 +565,40 @@ span {
     line-height: 1.5;
   }
   code {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  svg {
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+  }
+  .desktop_preview {
+    background-image: url("assets/mobile_preview.svg");
+    margin-bottom: 40px;
+  }
+  .desktop_preview_second {
+    background-image: url("assets/mobile_preview_second.svg");
+    margin-bottom: 40px;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
   code {
-    font-size: 14px;
+    font-size: 16px;
   }
   #Layer_1, #Layer_2, #Layer_3 {
     transform: scale(0.7);
     margin: auto;
-    margin-top: -130px;
-    margin-bottom: -130px;
-
-  }
-  svg#Layer_2 {
-    margin-top: -200px !important;
-    margin-bottom: -200px !important;
   }
   svg#Layer_4, svg#Layer_3 {
     transform: scale(0.7);
 
   }
+  svg {
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+  }
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -568,14 +609,9 @@ span {
   #Layer_1, #Layer_2, #Layer_3 {
     transform: scale(0.7);
     margin: auto;
-    margin-top: -130px;
-    margin-bottom: -130px;
 
   }
-  svg#Layer_2 {
-    margin-top: -200px !important;
-    margin-bottom: -200px !important;
-  }
+
   svg#Layer_4, svg#Layer_3 {
     transform: scale(0.7);
 
@@ -584,66 +620,70 @@ span {
     margin-right: 70px;
     margin-left: 70px;
   }
-  .nav_icon{
+  .nav_icon {
     display: none;
   }
-  nav{
+  nav {
     text-align: right;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .expand_nav{
+  .expand_nav {
     display: block;
+  }
+  svg {
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+  }
+  .para_format {
+    font-size: 18px;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
   code {
-    font-size: 18px;
+    font-size: 16px;
   }
   #Layer_1, #Layer_2, #Layer_3 {
     transform: scale(0.7);
     margin: auto;
-    margin-top: -130px;
-    margin-bottom: -130px;
 
-  }
-  svg#Layer_2 {
-    margin-top: -200px !important;
-    margin-bottom: -200px !important;
   }
   svg#Layer_4, svg#Layer_3 {
     transform: scale(0.7);
 
   }
   .para_format {
-    margin-right: 130px;
-    margin-left: 130px;
+    margin-right: 180px;
+    margin-left: 180px;
+    font-size: 18px;
   }
-  .nav_icon{
+  .nav_icon {
     display: none;
   }
-  nav{
+  nav {
     text-align: right;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .expand_nav{
+  .expand_nav {
     display: block;
+  }
+  svg {
+    margin-left: 20% !important;
+    margin-right: 20% !important;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   code {
-    font-size: 22px;
+    font-size: 16px;
   }
   #Layer_1, #Layer_2, #Layer_3 {
     transform: scale(0.7);
     margin: auto;
-
-
   }
 
   svg#Layer_4, svg#Layer_3 {
@@ -662,34 +702,36 @@ span {
   .para_format {
     margin-right: 25%;
     margin-left: 25%;
+    font-size: 18px;
   }
 
-  .animation_three{
-    margin:auto;
+  .animation_three {
+    margin: auto;
   }
   svg {
-    margin-left: 40% !important;
-    margin-right: 40% !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
   }
-  .commenter_cont{
-    width:30%;
+  .commenter_cont {
+    width: 30%;
   }
-  .usernames{
-    width:60%;
+  .usernames {
+    width: 60%;
   }
-  form{
-    width:50%;
-    margin:auto;
+  form {
+    width: 50%;
+    margin: auto;
   }
-  .nav_icon{
+  .nav_icon {
     display: none;
   }
-  nav{
+  nav {
     text-align: right;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .expand_nav{
+  .expand_nav {
     display: block;
   }
+
 }

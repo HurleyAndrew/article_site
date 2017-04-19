@@ -55,6 +55,10 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         document.querySelectorAll(".btn_submit")[0].addEventListener("click", refreshComment);
         document.querySelectorAll(".nav_icon")[0].addEventListener("click", unhidenav);
         document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
+        i = 1
+        while ( i < 5){
+            document.querySelector(".circle")
+        }
     });
 
 
@@ -68,7 +72,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         <div class="expand_tab">Art & Life</div>
         <div class="expand_tab">Politics</div>
         <div class="expand_tab">Tech</div>
-        <div class="expand_tab">Money</div>
+        <div class="expand_tab">Zen Garden</div>
     </div>
     Espy
 
@@ -76,7 +80,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         <div class="tab">Art & Life</div>
         <div class="tab">Politics</div>
         <div class="tab">Tech</div>
-        <div class="tab">Money</div>
+        <div class="tab">Zen Garden</div>
     </div>
 
 </nav>
@@ -502,7 +506,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
             <input class="at2" type="text" name="last_name" placeholder="Last Name" required="required">
         </div>
         <div class="comment_section">
-            <textarea class="at0" type="text" required="required" name="comment"></textarea>
+            <textarea class="at0" required="required" name="comment"></textarea>
         </div>
         <div class="submit_cont">
             <button type="submit" class="btn_submit">Submit</button>
@@ -525,17 +529,19 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
     }
     ?>
 
-    <section class="next_article__cont">
-        <div class="next_article">
+    <div class="next_article__cont">
+        <div class="arrow_left"></div>
+        <div class="next_article desktop_preview">
+
+        </div>
+        <div class="arrow_right"></div>
+        <div class="next_article desktop_preview_second">
 
         </div>
         <div class="next_article">
 
         </div>
-        <div class="next_article">
-
-        </div>
-    </section>
+    </div>
 </div>
 </body>
 </html>
