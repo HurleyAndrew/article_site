@@ -83,18 +83,18 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     </div>
     <div class="expand_nav">
-        <div class="expand_tab">Art & Life</div>
-        <div class="expand_tab">Politics</div>
-        <div class="expand_tab">Tech</div>
+        <div class="expand_tab">Home</div>
+        <div class="expand_tab">CSS & JS</div>
         <div class="expand_tab">Zen Garden</div>
+        <div class="expand_tab">Other</div>
     </div>
     Espy
 
     <div class="nav_extend__cont">
-        <div class="tab">Art & Life</div>
+        <div class="tab">Home</div>
         <div class="tab">Politics</div>
-        <div class="tab">Tech</div>
         <div class="tab">Zen Garden</div>
+        <div class="tab">Other</div>
     </div>
 
 </nav>
