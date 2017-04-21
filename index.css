@@ -1,7 +1,5 @@
 * {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  shape-rendering: geometricPrecision; }
+  box-sizing: border-box; }
 
 .clear_fix {
   clear: both;
@@ -19,16 +17,14 @@ main {
   background: no-repeat url("assets/Facebook.svg");
   background-size: contain;
   height: 100%;
-  width: 100%;
-  background-position-x: -4px; }
+  width: 100%; }
 
 .google {
   background: no-repeat url("assets/Google.svg");
   background-size: contain;
   height: 120%;
   width: 120%;
-  background-position-x: -4px;
-  background-position-y: -4px; }
+  background-position: -3px -4px; }
 
 .instagram {
   background: no-repeat url("assets/Instagram.svg");
@@ -145,28 +141,11 @@ code {
   background-color: #FEADAB;
   float: left;
   margin-right: 28px;
-  display: none;
-  animation: social_swipein .4s ease-out; }
+  display: none; }
 
-.circle_div:nth-child(1) {
-  animation-delay: 0.2s;
-  display: block; }
-
-.circle_div:nth-child(2) {
-  animation-delay: 0.4s;
-  display: block; }
-
-.circle_div:nth-child(3) {
-  animation-delay: 0.6s;
-  display: block; }
-
-.circle_div:nth-child(4) {
-  animation-delay: 0.8s;
-  display: block; }
-
-.circle_div:nth-child(5) {
-  animation-delay: 1s;
-  display: block; }
+.circle_div_anime {
+  display: block;
+  animation: social_swipein .3s ease-out; }
 
 @keyframes social_swipein {
   from {
@@ -407,15 +386,6 @@ span {
   to {
     background-color: red;
     transform: translateX(150px); } }
-.next_article {
-  height: 350px; }
-
-.next_article__cont {
-  width: 60%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto; }
-
 .expand_nav {
   display: none; }
 
@@ -428,16 +398,6 @@ span {
 
 .expand_tab:hover {
   background-color: #FEADAB; }
-
-.desktop_preview {
-  background-image: url("assets/desktop_preview.svg");
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.desktop_preview_second {
-  background-image: url("assets/desktop_preview_second.svg");
-  background-repeat: no-repeat;
-  background-size: contain; }
 
 .arrow_left {
   display: none; }
@@ -596,10 +556,6 @@ Small devices (landscape phones, 576px and up)*/
   svg#Layer_3 {
     padding-top: 100px;
     padding-bottom: 100px; }
-
-  svg#Layer_4 {
-    padding-top: -300px;
-    padding-bottom: -300px; }
 
   .para_format {
     margin-right: 25%;

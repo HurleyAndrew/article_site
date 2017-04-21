@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <title>Espy - Javascript and CSS Animations</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta property="og:title" content="Espy: News Network" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://amh5267.cias.rit.edu/news_article_site/" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="This is a pretty rad news page containing a couple of articles about animation and other topics." />
 </head>
 <body>
 <?php
@@ -51,14 +56,23 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
 
     }
+
+
+    function social_loadin() {
+        var DELAY = 100;
+        var items = document.querySelectorAll(".circle_div");
+        items.forEach(function (item, index) {
+            setTimeout(function () {
+                item.className = item.className + " circle_div_anime";
+                console.log("set number " + index);
+            }, DELAY * index)
+        });
+    }
     document.addEventListener('DOMContentLoaded', function () {
+        social_loadin();
         document.querySelectorAll(".btn_submit")[0].addEventListener("click", refreshComment);
         document.querySelectorAll(".nav_icon")[0].addEventListener("click", unhidenav);
         document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
-        i = 1
-        while ( i < 5){
-            document.querySelector(".circle")
-        }
     });
 
 
@@ -528,20 +542,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         echo " </div>";
     }
     ?>
-
-    <div class="next_article__cont">
-        <div class="arrow_left"></div>
-        <div class="next_article desktop_preview">
-
-        </div>
-        <div class="arrow_right"></div>
-        <div class="next_article desktop_preview_second">
-
-        </div>
-        <div class="next_article">
-
-        </div>
-    </div>
+</div>
 </div>
 </body>
 </html>
