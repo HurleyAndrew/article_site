@@ -4,6 +4,26 @@ $font-stack: "Playfair Display", "Trebuchet MS", Helvetica, serif;
 
 }
 
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
 .clear_fix {
   clear: both;
   content: "";
@@ -134,7 +154,7 @@ nav {
   border-bottom: solid #A4D3CE 2px;
 }
 
-.tab:last-child {
+.tab:nth-child(4) {
   border: none;
 }
 
@@ -170,9 +190,10 @@ code {
   margin-right: 28px;
   display: none;
 }
-.circle_div_anime{
+
+.circle_div_anime {
   display: block;
-  animation: social_swipein .3s ease-out;
+  animation: social_swipein .2s ease-out;
 }
 
 @keyframes social_swipein {
@@ -458,8 +479,6 @@ span {
   }
 }
 
-
-
 .expand_nav {
   display: none;
 }
@@ -475,12 +494,114 @@ span {
 .expand_tab:hover {
   background-color: #FEADAB;
 }
-.arrow_left {
-  display: none;
+
+.photoarrange {
+  width: 425px;
+  margin: auto;
+  padding: 100px 0 0 0;
+
 }
 
-.arrow_right {
-  display: none;
+.photo_1 {
+  background: url("assets/desktop_preview.png");
+  width: 425px;
+  height: 247px;
+  background-repeat: no-repeat;
+}
+
+.photo_2 {
+  background: url("assets/desktop_preview_second.png");
+  background-size: cover;
+  width: 425px;
+  height: 247px;
+  background-repeat: no-repeat;
+
+}
+
+.zen_titles {
+  font-family: "Helvetica Neue";
+  font-size: 50px;
+  text-align: center;
+}
+
+span.first_letter_new {
+  font-size: 50px;
+  padding-right: 5px;
+  margin-bottom: -15px;
+  color: #84c9ff;
+}
+
+.author_pic_new {
+  background-image: url("assets/sand.jpg");
+  height: 75px;
+  width: 50px;
+  background-size: cover;
+  background-position: -25px 0px;
+  position: relative;
+  top: -40px;
+  left: -20px;
+  z-index: 2;
+}
+
+.sand_one {
+  background-image: url("assets/sandcas_1.jpg");
+  height: 300px;
+  width: 450px;
+  margin: 10px auto;
+  background-size: cover;
+}
+
+.sand_two {
+  background-image: url("assets/sandcas_2.jpg");
+  height: 300px;
+  width: 450px;
+  margin: 10px auto;
+  background-size: cover
+}
+
+.sand_three {
+  background-image: url("assets/sandcas_3.jpg");
+  height: 300px;
+  width: 450px;
+  margin: 10px auto;
+  background-size: cover
+}
+
+.sand_four {
+  background-image: url("assets/sandcas_4.jpg");
+  height: 300px;
+  width: 450px;
+  margin: 10px auto;
+  background-size: cover
+}
+
+.sand_five {
+  background-image: url("assets/sandcas_5.jpg");
+  height: 300px;
+  width: 450px;
+  margin: 10px auto;
+  background-size: cover
+}
+
+.designer-navigation {
+  margin: auto;
+  width:50vw;
+
+}
+
+a.design-name {
+ font-family: "Helvetica Neue";
+  font-size: 20px;
+  color: #2495BC;
+}
+
+a.designer-name {
+font-family: Helvetica;
+  font-size: 20px;
+  color: grey;
+}
+ul{
+  list-style: none;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -495,7 +616,7 @@ Small devices (landscape phones, 576px and up)*/
   }
 
   div.author_cont {
-    display: none;
+    transform: scale(.8);
 
   }
   div.animation_one {
@@ -540,12 +661,32 @@ Small devices (landscape phones, 576px and up)*/
     margin-right: 20% !important;
   }
   .desktop_preview {
-    background-image: url("assets/mobile_preview.svg");
+    background-image: url("assets/mobile_preview.png");
     margin-bottom: 40px;
   }
   .desktop_preview_second {
-    background-image: url("assets/mobile_preview_second.svg");
+    background-image: url("assets/mobile_preview_second.png");
     margin-bottom: 40px;
+  }
+  .photoarrange {
+    width: 325px;
+  }
+  .photo_1 {
+    background: url("assets/mobile_preview.png");
+    background-size: contain;
+    width: 325px;
+    height: 240px;
+    background-repeat: no-repeat;
+  }
+  .photo_2 {
+    background: url("assets/mobile_preview_second.png");
+    background-size: contain;
+    width: 325px;
+    height: 247px;
+    background-repeat: no-repeat;
+  }
+  .zen_titles {
+    font-size: 35px;
   }
 }
 
@@ -566,7 +707,9 @@ Small devices (landscape phones, 576px and up)*/
     margin-left: 20% !important;
     margin-right: 20% !important;
   }
-
+  .zen_titles {
+    font-size: 35px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -661,8 +804,6 @@ Small devices (landscape phones, 576px and up)*/
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
-
 
   .para_format {
     margin-right: 25%;

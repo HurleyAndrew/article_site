@@ -5,11 +5,12 @@
     <link rel="stylesheet" type="text/css" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
-    <meta property="og:title" content="Espy: News Network" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://amh5267.cias.rit.edu/news_article_site/" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="This is a pretty rad news page containing a couple of articles about animation and other topics." />
+    <meta property="og:title" content="Espy: News Network"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://amh5267.cias.rit.edu/news_article_site/"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description"
+          content="This is a pretty rad news page containing a couple of articles about animation and other topics."/>
 </head>
 <body>
 <?php
@@ -57,9 +58,8 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     }
 
-
     function social_loadin() {
-        var DELAY = 100;
+        var DELAY = 70;
         var items = document.querySelectorAll(".circle_div");
         items.forEach(function (item, index) {
             setTimeout(function () {
@@ -72,6 +72,9 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         social_loadin();
         document.querySelectorAll(".btn_submit")[0].addEventListener("click", refreshComment);
         document.querySelectorAll(".nav_icon")[0].addEventListener("click", unhidenav);
+
+
+
         document.querySelectorAll(".nav_extend__cont")[0].style.display = 'none';
     });
 
@@ -83,17 +86,30 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     </div>
     <div class="expand_nav">
-        <div class="expand_tab">Home</div>
-        <div class="expand_tab">CSS & JS</div>
-        <div class="expand_tab">Zen Garden</div>
+        <a href="index.html">
+            <div class="expand_tab">Home</div>
+        </a>
+        <a href="cssjs.php">
+            <div class="expand_tab">CSS & JS</div>
+        </a>
+        <a href="zen.php">
+            <div class="expand_tab">Zen Garden</div>
+        </a>
         <div class="expand_tab">Other</div>
     </div>
     Espy
 
     <div class="nav_extend__cont">
-        <div class="tab">Home</div>
-        <div class="tab">Politics</div>
-        <div class="tab">Zen Garden</div>
+
+        <a href="index.html">
+            <div class="tab">Home</div>
+        </a>
+        <a href="cssjs.php">
+            <div class="tab">CSS & JS</div>
+        </a>
+        <a href="zen.php">
+            <div class="tab">Zen Garden</div>
+        </a>
         <div class="tab">Other</div>
     </div>
 
@@ -514,7 +530,7 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
 
     </div>
     <!-- submit a comment-->
-    <form action="index.php" method="POST">
+    <form action="cssjs.php" method="POST">
         <div class="usernames">
             <input class="at1" type="text" name="first_name" placeholder="First Name" required="required">
             <input class="at2" type="text" name="last_name" placeholder="Last Name" required="required">
@@ -542,7 +558,8 @@ if (isset($_POST['comment']) && !empty($_POST['comment'])) {
         echo " </div>";
     }
     ?>
-</div>
+
+
 </div>
 </body>
 </html>

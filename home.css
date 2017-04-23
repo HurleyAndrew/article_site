@@ -1,56 +1,240 @@
-body{
+body {
     background: #FFE6E5;
-}
-.photoarrange{
-    width:425px;
-    margin:auto;
-    padding:100px 0 0 0;
 
 }
-.photo_1{
-    background: url("assets/desktop_preview.svg");
-    width:425px;
-    height:247px;
-    background-repeat: no-repeat;
+
+a:active {
+    text-decoration: none;
+    color: black;
 }
-.photo_2{
-    background: url("assets/desktop_preview_second.svg");
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav_avoid {
+    padding-top: 50px;
+}
+
+.articles_cont {
+
+}
+
+.article_home__one {
+    background: url("assets/home_one.png");
+    width: 100vw;
+    height: 55vw;
+    max-width: 100%;
     background-size: cover;
-    width:425px;
-    height:247px;
-    background-repeat: no-repeat;
 
 }
-.home_title{
+
+.article_home__two {
+    background: url("assets/home_two.png");
+    width: 100vw;
+    height: 55vw;
+    max-width: 100%;
+    background-size: cover;
+
+}
+
+.article_home__one:hover {
+    opacity: .9;
+    transform: scale(.9);
+    transition: .2s ease-in-out;
+}
+
+.article_home__two:hover {
+    opacity: .9;
+    transform: scale(.9);
+    transition: .2s ease-in-out;
+}
+
+.article_name {
+    position: absolute;
+    margin: 20px 0px 0px 20px;
+    width: 650px;
+    color: white;
+    font-family: "Myriad Pro";
     text-align: center;
-    font-size:50px;
+    font-size: 40px;
+    background-color: #1C264A;
 }
 
+.author {
+    position: absolute;
+    margin: 80px 0px 0px 20px;
+    width: 360px;
+    color: white;
+    font-family: "Myriad Pro";
+    text-align: center;
+    font-size: 40px;
+    background-color: #1C264A;
+}
 
+.article_name_two {
+    position: absolute;
+    margin: 20px 0px 0px 20px;
+    width: 900px;
+    color: white;
+    font-family: "Myriad Pro";
+    text-align: center;
+    font-size: 40px;
+    background-color: #452632;
+}
+
+.author_two {
+    position: absolute;
+    margin: 80px 0px 0px 20px;
+    width: 360px;
+    color: white;
+    font-family: "Myriad Pro";
+    text-align: center;
+    font-size: 40px;
+    background-color: #452632;
+}
+
+.desc_one {
+    width: 100vw;
+    height: 20vw;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 100%;
+    background-color: #DCDEC1;
+    display: none;
+}
+
+.desc_two {
+    width: 100vw;
+    height: 20vw;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 100%;
+    background-color: #D2F7CE;
+    display: none;
+}
 
 @media (max-width: 576px) {
-    .photoarrange{
-        width:325px;
+    .desc_one {
+        display: block;
     }
-    .photo_1{
-        background: url("assets/mobile_preview.svg");
-        background-size: contain;
-        width:325px;
-        height:240px;
-        background-repeat: no-repeat;
+
+    .desc_two {
+        display: block;
     }
-    .photo_2{
-        background: url("assets/mobile_preview_second.svg");
-        background-size:contain;
-        width:325px;
-        height:247px;
-        background-repeat: no-repeat;
+
+    .article_name {
+        position: absolute;
+        margin: 10px 0px 0px 10px;
+        width: 350px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 22px;
+        background-color: #1C264A;
+    }
+
+    .author {
+        position: absolute;
+        margin: 50px 0px 0px 10px;
+        width: 160px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 22px;
+        background-color: #1C264A;
+    }
+
+    .article_name_two {
+        position: absolute;
+        margin: 10px 0px 0px 10px;
+        width: 450px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 22px;
+        background-color: #452632;
+    }
+
+    .author_two {
+        position: absolute;
+        margin: 50px 0px 0px 10px;
+        width: 160px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 22px;
+        background-color: #452632;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .desc_one {
+        display: block;
+        font-size: 20px;
+    }
 
+    .desc_two {
+        display: block;
+        font-size: 20px;
+    }
 
+    .article_name {
+        position: absolute;
+        margin: 10px 0px 0px 10px;
+        width: 390px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 24px;
+        background-color: #1C264A;
+    }
+
+    .author {
+        position: absolute;
+        margin: 50px 0px 0px 10px;
+        width: 170px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 24px;
+        background-color: #1C264A;
+    }
+
+    .article_name_two {
+        position: absolute;
+        margin: 10px 0px 0px 10px;
+        width: 510px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 24px;
+        background-color: #452632;
+    }
+
+    .author_two {
+        position: absolute;
+        margin: 50px 0px 0px 10px;
+        width: 170px;
+        color: white;
+        font-family: "Myriad Pro";
+        text-align: center;
+        font-size: 24px;
+        background-color: #452632;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -62,6 +246,5 @@ body{
 }
 
 @media screen and (min-width: 1200px) {
-
 
 }
